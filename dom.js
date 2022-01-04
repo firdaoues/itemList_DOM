@@ -80,4 +80,35 @@ for (var i = 0; i < odd.length; i++) {
 var itemList = document.querySelector("#items");
 //parentNode
 
-console.log(itemList.parentNode);
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = "#f4f4f4";
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+//Parentelement
+
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = "#f4f4f4";
+// console.log(itemList.parentElement.parentElement.parentElement);
+
+//children
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = "yellow";
+
+//firstChild
+// console.log(itemList.firstChild);
+
+// //firstelementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = "hello1";
+
+//lastChild
+// console.log(itemList.lastChild);
+
+//lastelementChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = "hello4";
+
+//nextsibling
+
+console.log(itemList.nextSibling);

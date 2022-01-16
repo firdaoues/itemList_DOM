@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width", "initial-scale">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -12,38 +12,44 @@
     <body>
             <header id="main-header" class="bg-success text-white p-4 mb-3">
                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
                     <h1 id="header-title">Item lister</h1>
                 </div>
+            <div class="col-md-6 align-self-center">
+                <input type="text" class="form-control" id="filter" placeholder="search items ..">
+            </div>
+            </div></div>
             </header>
             <div class="container">
                 <div id="main" class="card card-body">
                     <h2 class="title"> add items</h2>
-                    <form class="form-inline mb-3">
-                        <input type="text" class="form-control mr-2">
-                        <select class="form-control mr-2">
+                    <form id="addForm" class="form-inline mb-3">
+                        <input type="text" class="form-control mr-2" id="item">
+                        <!-- <select class="form-control mr-2">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                        </select>
+                        </select> -->
                         <input type="submit" class="btn btn-dark" value="submit">
                     </form>
                     <h2 class="title">Items</h2>    
                     <ul id="items" class="list-group">
-                        <li class="list-group-item">Item1</li>
-                        <li class="list-group-item">Item2</li>
-                        <li class="list-group-item">Item3</li>
-                        <li class="list-group-item">Item4</li>
+                        <li class="list-group-item">Item1 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                        <li class="list-group-item">Item2<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                        <li class="list-group-item">Item3<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                        <li class="list-group-item">Item4<button class="btn btn-danger btn-sm float-right delete">X</button></li>
                    
                     </ul>
                     <div id="output"></div>
                     <br> 
                     <button id="button" class="btn btn-dark btn-black" > Click Here</button>
                     <br>
-                    <div id="box" style="width:400px;height:200px;background:#f4f4f4;">
-                        <h3>Hello</h3>
+                    <!-- <div id="box" style="width:400px;height:200px;background:#f4f4f4;">
+                        <h3>Hello</h3> -->
                     </div>
                 </div>
                 </div>
-    <script src="dom.js"></script>
+    <script src="main.js"></script>
             
 </html>
